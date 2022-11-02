@@ -1,0 +1,18 @@
+body {
+    background-image: url("/IMG/background_body.png");
+    background-size: cover;
+}
+
+.listaNOordenada {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+li {
+    font-size: x-large;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

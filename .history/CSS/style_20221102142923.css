@@ -1,0 +1,236 @@
+body {
+    /* background: url(/IMG/background_body.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-position: center;
+    height: auto;
+    width: auto; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+section{
+    background: url(/IMG/background_body.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+/* NAV BAR - LINKS- RESPONSIVE */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+/*  */
+.logo{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 20px;
+    font-weight:lighter;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logo1{
+    color: white;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    padding-top: 0%;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 10px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+/* PREUBA RESPONSIVE TEST */
+@media (max-width: 853px){
+    label.logo {
+        font-size: 25px;
+        padding-left: 50px;    
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+}
+@media (max-width: 853px){
+    .checkbtn{
+        display:inline-block;
+    }
+    ul{
+        position:absolute;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }    
+    nav ul li a {
+        font-size: 20px;
+    }    
+        a:hover,a.active{
+        background:none;
+        color: #0082e6;
+        }
+        #check:checked ~ ul{
+        left: 0;
+        }
+    }
+
+    /* IMG PICTURES page front */
+    /* .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+    } */
+    .container-div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        /* padding-top: 10px;
+        margin-top: 10px; */
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    /* TITLE TEXT */
+    h1{
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+        padding: 10px;
+    }
+    /* TEXT */
+    p{
+        margin: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 10px;
+        
+    }
+    /* NEWS FORM */
+    .container-form{
+        text-align: center;
+        font-size: medium;
+        background: #0862a7;
+        height: 80px;
+        width: 100%;
+        padding: 10px;
+    }
+    input{
+        color: #0862a7;
+        font-size: 10px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    .wallpaper {
+        background-image: url(/IMG/consultoria_img.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-position-x: center;
+        background-position-y: center;
+        height: 400px;
+    }
+    .grid-container2 {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        justify-content: center;
+        gap: 12px 12px;
+        padding-top: 30px; 
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 400px;
+        grid-template-areas: 
+            "Com-1 Com-2 Com-3"
+            "Com-4 Com-5 Com-6";
+    }
+    .Com-1 {
+        justify-self: center; 
+        align-self: center; 
+        grid-area: Com-1; 
+    }
+    .Com-2 {
+        justify-self: center; 
+        align-self: center; 
+        grid-area: Com-2; 
+    }
+    .Com-3 {
+        justify-self: center; 
+        align-self: center; 
+        grid-area: Com-3; 
+    }
+    .Com-4 {
+        justify-self: center; 
+        align-self: center; 
+        grid-area: Com-4; 
+    }
+    .Com-5 {
+        justify-self: center; 
+        align-self: center; 
+        grid-area: Com-5; 
+    }
+    .Com-6 {
+        justify-self: center; 
+        align-self: center; 
+        grid-area: Com-6; 
+    }
+/*     @media screen (max-width:468px ){
+        .grid-container2 {
+            grid-template-areas: 
+            "Com-1"
+            "Com-2"
+            "Com-3"
+            "Com-4"
+            "Com-5"
+            "Com-6";
+        }
+    } */
+
+

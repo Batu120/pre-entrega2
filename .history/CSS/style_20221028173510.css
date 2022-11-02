@@ -1,0 +1,21 @@
+body {
+    background-image: url("/IMG/background_body.png");
+    background-size: cover;
+}
+
+/* Enlaces */
+.listaNOordenada {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    list-style: none;
+    
+}
+
+li {
+    font-size: x-large;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
